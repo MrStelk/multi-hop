@@ -95,6 +95,7 @@ void loop() {
         if(network.parent())
         {
           Serial.print("Send OK: ");
+          Serial.println(displayTimer);
           if((millis()-beginTimer) > 6000)
           {
             mesh.begin();           //If master not in range again connects to the other node
